@@ -1,3 +1,5 @@
+//Author : Rajanikant Tenguria
+
 #include <cmath>
 #include <cstdio>
 #include <vector>
