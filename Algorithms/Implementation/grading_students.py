@@ -1,4 +1,8 @@
 """
+Author : Rajanikant Tenguria
+
+Question 001
+
 HackerLand University has the following grading policy:
 
     Every student receives a grade in the inclusive range from 0 to 100.
@@ -13,6 +17,7 @@ For example grade = 84, will be rounded to 85 but 29 will not be rounded because
 
 Given the initial value of grade for each of Sam's n students, write code to automate the rounding process. For each grade, 
 round it according to the rules above and print the result on a new line.
+
 """
 
 import sys
