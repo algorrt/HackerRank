@@ -1,7 +1,7 @@
 """
 Author    : Rajanikant Tenguria        
 Language  : Python 2
-Problem   : https://www.hackerrank.com/challenges/between-two-sets
+Problem   : https://www.hackerrank.com/challenges/queens-attack-2
 Avg Time  : 0.08s
 % Success : 66.24 (3289/4965) 
 """
