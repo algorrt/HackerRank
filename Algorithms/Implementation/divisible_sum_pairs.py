@@ -1,9 +1,9 @@
 """
 Author    : Rajanikant Tenguria        
 Language  : Python 2
-Problem   : https://www.hackerrank.com/challenges/between-two-sets
+Problem   : https://www.hackerrank.com/challenges/divisible-sum-pairs
 Avg Time  : 0s
-% Success : 88.15 (32162/36484)
+% Success : 97.72 (75152/76902)
 """
 
 import sys
