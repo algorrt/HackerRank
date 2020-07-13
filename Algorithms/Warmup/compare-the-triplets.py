@@ -1,30 +1,28 @@
-# Author: Rajanikant Tenguria
+#!/bin/python3
 
-#!/bin/python
-
+import math
+import os
+import random
+import re
 import sys
 
-def solve(a0, a1, a2, b0, b1, b2):
-    ac=0
-    bc=0
-    if a0>b0:
-        ac+=1
-    if a0<b0:
-        bc+=1
-    if a1>b1:
-        ac+=1
-    if a1<b1:
-        bc+=1
-    if a2>b2:
-        ac+=1
-    if a2<b2:
-        bc+=1    
-    return ac,bc
-    # Complete this function
 
-a0, a1, a2 = raw_input().strip().split(' ')
-a0, a1, a2 = [int(a0), int(a1), int(a2)]
-b0, b1, b2 = raw_input().strip().split(' ')
-b0, b1, b2 = [int(b0), int(b1), int(b2)]
-result = solve(a0, a1, a2, b0, b1, b2)
-print " ".join(map(str, result))
+def compareTriplets(a, b):
+    alice = bob = 0
+    for i in range(len(a)):
+        if a[i] > b[i]:
+            alice += 1
+        if a[i] < b[i]:
+            bob += 1
+
+    return alice, bob
+
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    a = list(map(int, input().rstrip().split()))
+    b = list(map(int, input().rstrip().split()))
+    result = compareTriplets(a, b)
+    fptr.write(' '.join(map(str, result)))
+    fptr.write('\n')
+    fptr.close()
